@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+ol {
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 150px;
+  text-align: left;
+}
