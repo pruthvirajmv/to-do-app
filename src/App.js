@@ -26,6 +26,9 @@ function Todo() {
         <button onClick={(event) => addTask(event)}>Do it</button>
       </form>
       <h1> Your Do List </h1>
+      <div style={{ fontSize: "0.8rem", marginTop: "-20px" }}>
+        (click on task to complete)
+      </div>
       <ol>
         {todoList.map((item) => (
           <li key={item}>
@@ -46,7 +49,8 @@ function ShowList({ name }) {
     <>
       <p
         style={{
-          textDecoration: complete ? "line-through" : ""
+          textDecoration: complete ? "line-through" : "",
+          cursor: "pointer"
         }}
         onClick={() => setComplete(() => !complete)}
       >
